@@ -1,1 +1,1 @@
-Project of a roadmap application for the Borderless Coding Community, intented for building a guide for Data Structures and Algorithms.
+Project of a roadmap application for the Borderless Coding Community. The application goal is the serve as guide through study and practice of Data Structures and Algorithms.
