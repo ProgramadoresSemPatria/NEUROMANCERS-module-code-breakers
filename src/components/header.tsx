@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 				<nav className="flex-1 flex justify-center">
 					<a
 						href="#roadmap"
-						className="text-lg text-gray-300 hover:text-white transition-colors relative group"
+						className="text-lg text-gray-300 hover:text-white transition-colors font-bold relative group"
 					>
 						Roadmap
 						<span className="absolute bottom-0 left-0 w-0 h-1 bg-white transition-all group-hover:w-full"></span>
