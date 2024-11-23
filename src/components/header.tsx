@@ -12,7 +12,6 @@ const Header: React.FC = () => {
 						className="w-12 h-12 object-contain animate-fade-in hover:scale-110 transition-transform"
 					/>
 					<a
-						href="/"
 						className="text-xl font-semibold text-gray-100 hover:text-gray-300 transition-colors"
 					>
 						Borderless Coding
