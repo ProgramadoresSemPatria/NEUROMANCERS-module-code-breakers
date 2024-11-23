@@ -15,7 +15,7 @@ const Header: React.FC = () => {
 						href="/"
 						className="text-xl font-semibold text-gray-100 hover:text-gray-300 transition-colors"
 					>
-						Code Breakers
+						Borderless Coding
 					</a>
 				</div>
 

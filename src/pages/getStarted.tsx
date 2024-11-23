@@ -18,7 +18,7 @@ const GetStarted: React.FC = () => {
 					<div className="text-center space-y-4">
 						<h1 className="text-4xl font-bold">
 							Start Your Learning Journey with{" "}
-							<span className="text-green-400">Code Breakers</span>
+							<span className="text-green-400">Borderless Coding Roadpam</span>
 						</h1>
 						<p className="text-lg">
 							Follow a structured roadmap to master coding and achieve your goals step by step.
