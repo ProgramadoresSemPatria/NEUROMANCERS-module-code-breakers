@@ -1,10 +1,7 @@
+import Roadmap from "./components/Roadmap";
 
 function App() {
-
-	return (
-		<>
-		</>
-	)
+  return <Roadmap />;
 }
 
-export default App
+export default App;
