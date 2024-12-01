@@ -7,41 +7,123 @@ import {
   addEdge,
   Connection,
   Edge,
-  Node,
 } from "@xyflow/react";
+import CustomNode from "./CustomNode";
+
+const roadmapStyle = {
+  backgroundColor: "#202225",
+};
+
+const nodeTypes = {
+  custom: CustomNode,
+};
 
 const initialNodes = [
-  { id: "1", position: { x: 0, y: 0 }, data: { label: "Arrays and Hashing" } },
-  { id: "2", position: { x: -100, y: 100 }, data: { label: "Two Pointers" } },
-  { id: "3", position: { x: 100, y: 100 }, data: { label: "Stack" } },
-  { id: "4", position: { x: -200, y: 200 }, data: { label: "Binary Search" } },
-  { id: "5", position: { x: 0, y: 200 }, data: { label: "Sliding Window" } },
-  { id: "6", position: { x: 200, y: 200 }, data: { label: "Linked List" } },
-  { id: "7", position: { x: -100, y: 300 }, data: { label: "Trees" } },
-  { id: "8", position: { x: -200, y: 400 }, data: { label: "Tries" } },
-  { id: "9", position: { x: 200, y: 400 }, data: { label: "Backtracking" } },
+  {
+    id: "1",
+    type: "custom",
+    position: { x: 0, y: 0 },
+    data: { label: "Arrays and Hashing" },
+  },
+  {
+    id: "2",
+    type: "custom",
+    position: { x: -100, y: 100 },
+    data: { label: "Two Pointers" },
+  },
+  {
+    id: "3",
+    type: "custom",
+    position: { x: 100, y: 100 },
+    data: { label: "Stack" },
+  },
+  {
+    id: "4",
+    type: "custom",
+    position: { x: -200, y: 200 },
+    data: { label: "Binary Search" },
+  },
+  {
+    id: "5",
+    type: "custom",
+    position: { x: 0, y: 200 },
+    data: { label: "Sliding Window" },
+  },
+  {
+    id: "6",
+    type: "custom",
+    position: { x: 200, y: 200 },
+    data: { label: "Linked List" },
+  },
+  {
+    id: "7",
+    type: "custom",
+    position: { x: -100, y: 300 },
+    data: { label: "Trees" },
+  },
+  {
+    id: "8",
+    type: "custom",
+    position: { x: -200, y: 400 },
+    data: { label: "Tries" },
+  },
+  {
+    id: "9",
+    type: "custom",
+    position: { x: 200, y: 400 },
+    data: { label: "Backtracking" },
+  },
   {
     id: "10",
+    type: "custom",
     position: { x: -300, y: 500 },
     data: { label: "Heap / Priority Queue" },
   },
-  { id: "11", position: { x: 100, y: 500 }, data: { label: "Graphs" } },
-  { id: "12", position: { x: 450, y: 500 }, data: { label: "1-D DP" } },
-  { id: "13", position: { x: -400, y: 600 }, data: { label: "Intervals" } },
-  { id: "14", position: { x: -200, y: 600 }, data: { label: "Greedy" } },
+  {
+    id: "11",
+    type: "custom",
+    position: { x: 100, y: 500 },
+    data: { label: "Graphs" },
+  },
+  {
+    id: "12",
+    type: "custom",
+    position: { x: 450, y: 500 },
+    data: { label: "1-D DP" },
+  },
+  {
+    id: "13",
+    type: "custom",
+    position: { x: -400, y: 600 },
+    data: { label: "Intervals" },
+  },
+  {
+    id: "14",
+    type: "custom",
+    position: { x: -200, y: 600 },
+    data: { label: "Greedy" },
+  },
   {
     id: "15",
+    type: "custom",
     position: { x: 0, y: 600 },
     data: { label: "Advanced Graphs" },
   },
-  { id: "16", position: { x: 300, y: 600 }, data: { label: "2-D DP" } },
+  {
+    id: "16",
+    type: "custom",
+    position: { x: 300, y: 600 },
+    data: { label: "2-D DP" },
+  },
   {
     id: "17",
+    type: "custom",
     position: { x: 500, y: 600 },
     data: { label: "Bit Manipulation" },
   },
   {
     id: "18",
+    type: "custom",
     position: { x: 200, y: 700 },
     data: { label: "Math & Geometry" },
   },
@@ -81,7 +163,7 @@ const Roadmap: React.FC = () => {
   );
   return (
     <>
-      <div style={{ width: "100vw", height: "80vh" }}>
+      <div style={{ width: "100vw", height: "100vh" }}>
         <ReactFlow
           nodes={initialNodes}
           edges={initialEdges}
@@ -89,6 +171,9 @@ const Roadmap: React.FC = () => {
           onEdgesChange={onEdgesChange}
           proOptions={proOptions}
           onConnect={onConnect}
+          nodeTypes={nodeTypes}
+          style={roadmapStyle}
+          defaultViewport={{ x: 500, y: 100, zoom: 1 }}
         />
       </div>
     </>
