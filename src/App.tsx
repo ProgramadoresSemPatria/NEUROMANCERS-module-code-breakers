@@ -1,4 +1,4 @@
-import Roadmap from "./components/Roadmap";
+import Roadmap from "./components/Roadmap/Roadmap";
 
 function App() {
   return <Roadmap />;
