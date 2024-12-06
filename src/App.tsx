@@ -1,7 +1,19 @@
-import Roadmap from "./components/Roadmap/Roadmap";
+import GetStarted from "./pages/getStarted";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  return <Roadmap />;
+  const router = createBrowserRouter([
+    {
+      path: "/getStarted",
+      element: <GetStarted />,
+    },
+  ]);
+
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
