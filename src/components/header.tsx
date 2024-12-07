@@ -3,7 +3,7 @@ import logo from '../assets/símbolo.png';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white shadow-lg rounded-lg fixed w-full top-0 left-0 z-10">
+    <header className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white shadow-lg fixed w-full top-0 left-0 z-10">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <img
