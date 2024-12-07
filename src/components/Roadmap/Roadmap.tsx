@@ -30,24 +30,24 @@ const Roadmap: React.FC = () => {
     (params: Edge | Connection) => setEdges((eds) => addEdge(params, eds)),
     [setEdges]
   );
+
   return (
-    <>
-      <div style={{ width: "100vw", height: "100vh" }}>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          proOptions={proOptions}
-          onConnect={onConnect}
-          nodeTypes={nodeTypes}
-          style={roadmapStyle}
-          nodesConnectable={false}
-          defaultViewport={{ x: 500, y: 100, zoom: 1 }}
-        />
-      </div>
-    </>
+    <div className="pt-20 w-full h-screen"> {/* Added pt-20 (padding top) */}
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        proOptions={proOptions}
+        onConnect={onConnect}
+        nodeTypes={nodeTypes}
+        style={roadmapStyle}
+        nodesConnectable={false}
+        defaultViewport={{ x: 1100, y: 300, zoom: 1 }}
+      />
+    </div>
   );
 };
 
 export default Roadmap;
+
