@@ -43,7 +43,7 @@ const Roadmap: React.FC = () => {
 				nodeTypes={nodeTypes}
 				style={roadmapStyle}
 				nodesConnectable={false}
-				defaultViewport={{ x: 1250, y: 300, zoom: 1 }}
+				defaultViewport={{ x: 900, y: 150, zoom: 1 }}
 			/>
 		</div>
 	);
