@@ -32,7 +32,7 @@ const Roadmap: React.FC = () => {
   );
 
   return (
-    <div className="pt-20 w-full h-screen"> {/* Added pt-20 (padding top) */}
+    <div className="pt-20 w-full h-screen"> 
       <ReactFlow
         nodes={nodes}
         edges={edges}
