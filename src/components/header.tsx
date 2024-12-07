@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
 				<nav className="hidden md:flex flex-1 justify-center space-x-6">
 					<a
-						href="#roadmap"
+						href="/roadmap"
 						className="text-lg text-gray-300 hover:text-white transition-transform transform hover:scale-105 font-bold relative group"
 					>
 						Roadmap
