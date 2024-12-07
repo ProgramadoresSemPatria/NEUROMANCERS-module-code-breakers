@@ -56,7 +56,7 @@ const GetStarted: React.FC = () => {
 							Connect with other learners, share your progress, and stay motivated.
 						</p>
 						<a
-							href="https://discord.gg/QysVX2Vn"
+							href="https://www.borderlesscoding.com/"
 							className="text-green-400 font-medium hover:underline mt-4 inline-block"
 						>
 							Get Connected
