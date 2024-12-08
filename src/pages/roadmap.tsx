@@ -2,7 +2,7 @@ import React from "react";
 import { ReactFlowProvider } from "@xyflow/react";
 import Header from "../components/header.tsx";
 import Roadmap from "../components/Roadmap/Roadmap";
-
+import ProgressIndicator from "../components/Progress/ProgressIndicator.tsx"
 const RoadmapPage: React.FC = () => {
   return (
     <>
@@ -10,9 +10,9 @@ const RoadmapPage: React.FC = () => {
       <ReactFlowProvider>
         <Roadmap />
       </ReactFlowProvider>
+			<ProgressIndicator />
     </>
   );
 };
 
 export default RoadmapPage;
-
