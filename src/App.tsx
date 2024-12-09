@@ -1,5 +1,5 @@
-import GetStarted from "./pages/getStarted";
-import RoadmapPage from "./pages/roadmap"
+import GetStarted from "./pages/GetStartedPage";
+import RoadmapPage from "./pages/RoadmapPage"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {

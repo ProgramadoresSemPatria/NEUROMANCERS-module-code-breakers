@@ -29,7 +29,7 @@ const Roadmap: React.FC = () => {
 	const onConnect = useCallback(
 		(params: Edge | Connection) => setEdges((eds) => addEdge(params, eds)),
 		[setEdges]
-	);
+);
 
 	return (
 		<div className="pt-20 w-full h-screen">
@@ -43,7 +43,7 @@ const Roadmap: React.FC = () => {
 				nodeTypes={nodeTypes}
 				style={roadmapStyle}
 				nodesConnectable={false}
-				defaultViewport={{ x: 900, y: 150, zoom: 1 }}
+				fitView
 			/>
 		</div>
 	);
