@@ -27,8 +27,8 @@ const Checkbox: React.FC<PrettyCheckboxProps> = ({
 			/>
 			<div
 				className={`w-5 h-5 flex items-center justify-center border-2 rounded-md transition-all duration-200 ${checked
-						? "bg-blue-600 border-blue-600"
-						: "border-gray-400 group-hover:border-blue-400"
+					? "bg-blue-600 border-blue-600"
+					: "border-gray-400 group-hover:border-blue-400"
 					}`}
 			>
 				{checked && (
