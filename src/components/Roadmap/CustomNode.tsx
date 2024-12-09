@@ -6,6 +6,8 @@ interface CustomNodeProps {
     label: string;
     type: "source" | "target" | "both";
   };
+  setSelectedNode: (node: any) => void;
+  setIsModalOpen: (isOpen: boolean) => void;
 }
 
 const handleStyle = {
@@ -16,17 +18,23 @@ const handleStyle = {
   boxShadow: "0 0 5px rgba(0, 0, 0, 0.3)",
 };
 
-const CustomNode: React.FC<CustomNodeProps> = ({ data }) => {
+export const CustomNode: React.FC<CustomNodeProps> = ({ data }) => {
   return (
-    <div className="rounded w-40 h-12 flex justify-center items-center text-center text-white bg-[#28d3a0] shadow-md hover:bg-[#4814b0] transition-shadow">
-      <p className="font-bold">{data.label}</p>
-      {(data.type === "target" || data.type === "both") && (
-        <Handle type="target" position={Position.Top} style={handleStyle} />
-      )}
-      {(data.type === "source" || data.type === "both") && (
-        <Handle type="source" position={Position.Bottom} style={handleStyle} />
-      )}
-    </div>
+    <>
+      <div className="rounded w-40 h-12 flex justify-center items-center text-center text-white bg-[#28d3a0] shadow-md hover:bg-[#4814b0] transition-shadow">
+        <p className="font-bold">{data.label}</p>
+        {(data.type === "target" || data.type === "both") && (
+          <Handle type="target" position={Position.Top} style={handleStyle} />
+        )}
+        {(data.type === "source" || data.type === "both") && (
+          <Handle
+            type="source"
+            position={Position.Bottom}
+            style={handleStyle}
+          />
+        )}
+      </div>
+    </>
   );
 };
 

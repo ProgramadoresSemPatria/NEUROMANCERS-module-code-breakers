@@ -1,3 +1,4 @@
+import RoadmapPage from "./pages/RoadmapPage";
 import GetStarted from "./pages/getStarted";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -6,6 +7,10 @@ function App() {
     {
       path: "/getStarted",
       element: <GetStarted />,
+    },
+    {
+      path: "/",
+      element: <RoadmapPage />,
     },
   ]);
 
