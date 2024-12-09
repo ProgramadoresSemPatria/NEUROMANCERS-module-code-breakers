@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../components/header";
+import Header from "../components/Header.tsx";
 
 const GetStarted: React.FC = () => {
 	useEffect(() => {

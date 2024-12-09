@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactFlowProvider } from "@xyflow/react";
-import Header from "../components/header.tsx";
+import Header from "../components/Header.tsx";
 import Roadmap from "../components/Roadmap/Roadmap";
 import ProgressIndicator from "../components/Progress/ProgressIndicator.tsx"
 const RoadmapPage: React.FC = () => {
