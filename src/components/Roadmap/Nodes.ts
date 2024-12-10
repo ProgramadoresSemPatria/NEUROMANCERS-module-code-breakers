@@ -5,6 +5,12 @@ export const roadmapNodes = [
     position: { x: 0, y: 0 },
     data: { label: "Arrays and Hashing", type: "source" },
     draggable: false,
+    prerequistes: [
+      "Dynamic Arrays",
+      "Hash Usage",
+      "Hash Implementation",
+      "Prefix Sums",
+    ],
   },
   {
     id: "2",
@@ -12,6 +18,7 @@ export const roadmapNodes = [
     position: { x: -100, y: 100 },
     data: { label: "Two Pointers", type: "both" },
     draggable: false,
+    prerequistes: ["Two Pointers"],
   },
   {
     id: "3",
@@ -19,6 +26,7 @@ export const roadmapNodes = [
     position: { x: 100, y: 100 },
     data: { label: "Stack", type: "target" },
     draggable: false,
+    prerequistes: ["Stacks"],
   },
   {
     id: "4",
@@ -26,6 +34,7 @@ export const roadmapNodes = [
     position: { x: -200, y: 200 },
     data: { label: "Binary Search", type: "both" },
     draggable: false,
+    prerequistes: ["Search Array", "Search Range"],
   },
   {
     id: "5",
@@ -33,6 +42,7 @@ export const roadmapNodes = [
     position: { x: 0, y: 200 },
     data: { label: "Sliding Window", type: "target" },
     draggable: false,
+    prerequistes: ["Sliding Window Fixed Size", "Sliding Window Variable Size"],
   },
   {
     id: "6",
@@ -40,6 +50,11 @@ export const roadmapNodes = [
     position: { x: 200, y: 200 },
     data: { label: "Linked List", type: "both" },
     draggable: false,
+    prerequistes: [
+      "Singly Linked Lists",
+      "Doubly Linked Lists",
+      "Fast and Slow Pointers",
+    ],
   },
   {
     id: "7",
@@ -47,6 +62,13 @@ export const roadmapNodes = [
     position: { x: -100, y: 300 },
     data: { label: "Trees", type: "both" },
     draggable: false,
+    prerequistes: [
+      "BST Insert and Remove",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "BST Sets and Maps",
+      "Iterative DFS",
+    ],
   },
   {
     id: "8",
@@ -54,6 +76,7 @@ export const roadmapNodes = [
     position: { x: -200, y: 400 },
     data: { label: "Tries", type: "both" },
     draggable: false,
+    prerequistes: ["Trie"],
   },
   {
     id: "9",
@@ -61,6 +84,7 @@ export const roadmapNodes = [
     position: { x: 200, y: 400 },
     data: { label: "Backtracking", type: "both" },
     draggable: false,
+    prerequistes: ["Tree Maze", "Subsets", "Combinations", "Permutations"],
   },
   {
     id: "10",
@@ -68,6 +92,7 @@ export const roadmapNodes = [
     position: { x: -300, y: 500 },
     data: { label: "Heap / Priority Queue", type: "both" },
     draggable: false,
+    prerequistes: ["Heap Properties", "Push and Pop", "Heapify", "Two Heaps"],
   },
   {
     id: "11",
@@ -75,6 +100,12 @@ export const roadmapNodes = [
     position: { x: 100, y: 500 },
     data: { label: "Graphs", type: "both" },
     draggable: false,
+    prerequistes: [
+      "Intro to Graphs",
+      "Matrix DFS",
+      "Matrix BFS",
+      "Adjacency List",
+    ],
   },
   {
     id: "12",
@@ -82,6 +113,7 @@ export const roadmapNodes = [
     position: { x: 450, y: 500 },
     data: { label: "1-D DP", type: "both" },
     draggable: false,
+    prerequistes: ["1-Dimension", "Palindromes"],
   },
   {
     id: "13",
@@ -89,6 +121,7 @@ export const roadmapNodes = [
     position: { x: -400, y: 600 },
     data: { label: "Intervals", type: "target" },
     draggable: false,
+    prerequistes: [""],
   },
   {
     id: "14",
@@ -96,6 +129,7 @@ export const roadmapNodes = [
     position: { x: -200, y: 600 },
     data: { label: "Greedy", type: "target" },
     draggable: false,
+    prerequistes: ["Kadane's Algorithm"],
   },
   {
     id: "15",
@@ -103,6 +137,7 @@ export const roadmapNodes = [
     position: { x: 0, y: 600 },
     data: { label: "Advanced Graphs", type: "target" },
     draggable: false,
+    prerequistes: ["Dijktra's", "Prim's", "Kruskal's", "Topological Sort"],
   },
   {
     id: "16",
@@ -110,6 +145,12 @@ export const roadmapNodes = [
     position: { x: 300, y: 600 },
     data: { label: "2-D DP", type: "target" },
     draggable: false,
+    prerequistes: [
+      "2-Dimension DP",
+      "0 / 1 Knapsack",
+      "Unbounded Knapsack",
+      "LCS",
+    ],
   },
   {
     id: "17",
@@ -117,6 +158,7 @@ export const roadmapNodes = [
     position: { x: 500, y: 600 },
     data: { label: "Bit Manipulation", type: "both" },
     draggable: false,
+    prerequistes: ["Bit Operations"],
   },
   {
     id: "18",
@@ -124,5 +166,6 @@ export const roadmapNodes = [
     position: { x: 200, y: 700 },
     data: { label: "Math & Geometry", type: "target" },
     draggable: false,
+    prerequistes: [""],
   },
 ];

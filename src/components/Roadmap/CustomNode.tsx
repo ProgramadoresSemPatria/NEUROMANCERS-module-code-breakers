@@ -5,6 +5,7 @@ interface CustomNodeProps {
     id: string;
     label: string;
     type: "source" | "target" | "both";
+    prerequisites: string[];
   };
   setSelectedNode: (node: any) => void;
   setIsModalOpen: (isOpen: boolean) => void;

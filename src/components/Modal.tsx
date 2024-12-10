@@ -1,5 +1,4 @@
 import React from "react";
-import { roadmapNodes } from "./Roadmap/Nodes";
 
 interface ModalProps {
   isOpen: boolean;
