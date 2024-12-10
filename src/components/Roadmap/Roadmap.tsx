@@ -35,8 +35,8 @@ const Roadmap: React.FC = () => {
   );
 
   const onNodeClick = (_event: React.MouseEvent, node: Node) => {
-    setSelectedNode(node); // Store node data
-    setIsModalOpen(true); // Open the modal
+    setSelectedNode(node);
+    setIsModalOpen(true);
   };
 
   const closeModal = () => {
@@ -57,31 +57,39 @@ const Roadmap: React.FC = () => {
         style={roadmapStyle}
         nodesConnectable={false}
         defaultViewport={{ x: 900, y: 150, zoom: 1 }}
-        onNodeClick={onNodeClick} // Trigger when a node is clicked
+        onNodeClick={onNodeClick}
       />
 
-      {/* Modal */}
       <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
         content={
-          <div>
-            <h2 className="text-xl font-bold mb-2">Node Details</h2>
-            {selectedNode && (
+          <>
+            <div className="flex flex-col gap-8">
               <div>
-                <p>
-                  <strong>Node ID:</strong> {selectedNode.id}
-                </p>
-                <p>
-                  <strong>Node Type:</strong> {selectedNode.type}
-                </p>
-                <p>
-                  <strong>Node Data:</strong>{" "}
-                  {JSON.stringify(selectedNode.data)}
-                </p>
+                <h2 className="text-3xl font-bold mb-2 center">
+                  {typeof selectedNode?.data?.label === "string"
+                    ? selectedNode.data.label
+                    : "No label available"}
+                </h2>
               </div>
-            )}
-          </div>
+              <h3 className="text-xl">Prerequisites:</h3>
+              <div className="flex flex-row justify-center gap-3">
+                <div className="bg-zinc-900 rounded-md px-6 py-5 font-bold">
+                  Placeholder #1
+                </div>
+                <div className="bg-zinc-900 rounded-md px-6 py-5 font-bold">
+                  Placeholder #2
+                </div>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold">Exercises:</h2>
+                <div className="rounded-md bg-zinc-900 h-96 flex justify-center items-center">
+                  Table placeholder
+                </div>
+              </div>
+            </div>
+          </>
         }
       />
     </div>
