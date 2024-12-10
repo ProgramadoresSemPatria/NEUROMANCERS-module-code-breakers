@@ -13,6 +13,9 @@ import CustomNode from "./CustomNode";
 import { roadmapNodes } from "./Nodes";
 import { roadmapEdges } from "./Edges";
 import Modal from "../Modal.tsx";
+import PrerequisitesList, {
+  isPrerequisitesArray,
+} from "../PrerequisitesList.tsx";
 
 const roadmapStyle = {
   backgroundColor: "#202225",
@@ -35,6 +38,7 @@ const Roadmap: React.FC = () => {
   );
 
   const onNodeClick = (_event: React.MouseEvent, node: Node) => {
+    console.log(node.data);
     setSelectedNode(node);
     setIsModalOpen(true);
   };
@@ -73,20 +77,18 @@ const Roadmap: React.FC = () => {
                     : "No label available"}
                 </h2>
               </div>
-              <h3 className="text-xl">Prerequisites:</h3>
-              <div className="flex flex-row justify-center gap-3">
-                <div className="bg-zinc-900 rounded-md px-6 py-5 font-bold">
-                  Placeholder #1
-                </div>
-                <div className="bg-zinc-900 rounded-md px-6 py-5 font-bold">
-                  Placeholder #2
-                </div>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold">Exercises:</h2>
-                <div className="rounded-md bg-zinc-900 h-96 flex justify-center items-center">
-                  Table placeholder
-                </div>
+              <PrerequisitesList
+                prerequisites={
+                  isPrerequisitesArray(selectedNode?.data?.prerequisites)
+                    ? selectedNode.data.prerequisites
+                    : undefined
+                }
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Exercises:</h2>
+              <div className="rounded-md bg-zinc-900 h-96 flex justify-center items-center">
+                Table placeholder
               </div>
             </div>
           </>
