@@ -21,11 +21,15 @@ const roadmapStyle = {
   backgroundColor: "#202225",
 };
 
-const nodeTypes = { custom: CustomNode };
+const nodeTypes = {
+  custom: CustomNode,
+};
 
 const proOptions = { hideAttribution: true };
 
 const Roadmap: React.FC = () => {
+  const [nodes, setNodes, onNodesChange] = useNodesState(roadmapNodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(roadmapEdges);
   const [nodes, setNodes, onNodesChange] = useNodesState(roadmapNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(roadmapEdges);
 

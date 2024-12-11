@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../components/header";
+import Header from "../components/Header.tsx";
 
 const GetStarted: React.FC = () => {
 	useEffect(() => {
@@ -18,7 +18,7 @@ const GetStarted: React.FC = () => {
 					<div className="text-center space-y-4">
 						<h1 className="text-4xl font-bold">
 							Start Your Learning Journey with{" "}
-							<span className="text-green-400">Borderless Coding Roadpam</span>
+							<span className="text-green-400">Borderless Coding Roadmap</span>
 						</h1>
 						<p className="text-lg">
 							Follow a structured roadmap to master coding and achieve your goals step by step.
@@ -56,7 +56,7 @@ const GetStarted: React.FC = () => {
 							Connect with other learners, share your progress, and stay motivated.
 						</p>
 						<a
-							href="https://discord.gg/QysVX2Vn"
+							href="https://www.borderlesscoding.com/"
 							className="text-green-400 font-medium hover:underline mt-4 inline-block"
 						>
 							Get Connected
