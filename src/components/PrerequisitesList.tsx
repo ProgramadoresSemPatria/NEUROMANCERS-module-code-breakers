@@ -17,7 +17,9 @@ const PrerequisitesList: React.FC<PrerequisitesListProps> = ({
 }) => {
   return (
     <div className="my-5">
-      <h3 className="text-xl font-semibold mb-4">Prerequisites:</h3>
+      <h3 className="text-xl font-semibold mb-4 justify-center">
+        Prerequisites:
+      </h3>
       {prerequisites && prerequisites.length > 0 ? (
         <div className="flex flex-wrap gap-2 justify-center">
           {prerequisites.map((item, index) => (
