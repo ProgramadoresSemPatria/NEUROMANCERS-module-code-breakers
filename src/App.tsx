@@ -1,5 +1,5 @@
 import GetStarted from "./pages/GetStartedPage";
-import RoadmapPage from "./pages/RoadmapPage"
+import RoadmapPage from "./pages/RoadmapPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       path: "/",
       element: <GetStarted />,
     },
-		 {
+    {
       path: "/roadmap",
       element: <RoadmapPage />,
     },
