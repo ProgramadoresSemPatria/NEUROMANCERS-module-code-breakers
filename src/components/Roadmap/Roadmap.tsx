@@ -30,8 +30,7 @@ const proOptions = { hideAttribution: true };
 const Roadmap: React.FC = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState(roadmapNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(roadmapEdges);
-  const [nodes, setNodes, onNodesChange] = useNodesState(roadmapNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(roadmapEdges);
+  
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedNode, setSelectedNode] = useState<Node | null>(null);
