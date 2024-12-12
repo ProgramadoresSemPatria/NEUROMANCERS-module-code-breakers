@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "react-scripts build",
+		"start": "react-scripts start"
   },
   "dependencies": {
     "@xyflow/react": "^12.3.5",
