@@ -14,7 +14,7 @@ const GetStarted: React.FC = () => {
 		<>
 			<Header />
 			<main className="relative bg-gray-100 text-gray-900 w-screen h-screen overflow-hidden">
-				<section className="absolute top-0 left-0 w-full h-1/4 bg-purple-800 text-white flex flex-col justify-center items-center">
+				<section className="absolute top-0 left-0 w-full h-1/4 bg-purple-800 text-white flex flex-col justify-center items-center mt-8"> {/* Added mt-8 here */}
 					<div className="text-center space-y-4">
 						<h1 className="text-4xl font-bold">
 							Start Your Learning Journey with{" "}
