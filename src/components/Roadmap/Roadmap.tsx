@@ -103,7 +103,7 @@ const Roadmap: React.FC = () => {
         isOpen={isModalOpen}
         onClose={closeModal}
         content={
-          <>
+          <div style={{ maxHeight: "80vh", overflowY: "auto" }}>
             <div className="flex flex-col gap-8">
               <div>
                 <h2 className="text-3xl font-bold mb-2 center">
@@ -205,7 +205,7 @@ const Roadmap: React.FC = () => {
                 <div className="text-gray-400">No exercises available.</div>
               )}
             </div>
-          </>
+          </div>
         }
       />
     </div>
