@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           </a>
         </div>
 
-        <nav className="flex-1 flex justify-center space-x-10">
+        <nav className="absolute inset-x-0 flex justify-center z-0">
           <a
             href="/roadmap"
             className="text-lg text-gray-300 hover:text-white transition-transform transform hover:scale-105 font-bold relative group"
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           </a>
         </nav>
 
-        <div className="space-x-4">
+        <div className="space-x-4 z-10">
           <a
             href="/"
             className="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition-colors"
@@ -43,3 +43,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
