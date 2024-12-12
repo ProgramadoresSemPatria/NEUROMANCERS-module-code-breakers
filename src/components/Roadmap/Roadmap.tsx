@@ -9,7 +9,6 @@ import {
 	Edge,
 	Node,
 } from "@xyflow/react";
-import CustomNode from "./CustomNode";
 import { roadmapNodes } from "./Nodes";
 import { roadmapEdges } from "./Edges";
 import Modal from "../Modal.tsx";
@@ -23,9 +22,8 @@ const roadmapStyle = {
 	backgroundColor: "#202225",
 };
 
-const nodeTypes = {
-	custom: CustomNode,
-};
+
+
 
 const proOptions = { hideAttribution: true };
 
@@ -90,7 +88,6 @@ const Roadmap: React.FC = () => {
 				onEdgesChange={onEdgesChange}
 				proOptions={proOptions}
 				onConnect={onConnect}
-				nodeTypes={nodeTypes}
 				style={roadmapStyle}
 				nodesConnectable={false}
 				defaultViewport={{ x: 900, y: 150, zoom: 1 }}
@@ -156,8 +153,8 @@ const Roadmap: React.FC = () => {
 													<td className="border border-gray-700 p-2 text-center">
 														<button
 															className={`text-2xl cursor-pointer ${problem.starred
-																	? "text-yellow-500"
-																	: "text-gray-400"
+																? "text-yellow-500"
+																: "text-gray-400"
 																} scale-150`}
 															onClick={() => {
 																problem.starred = !problem.starred;
@@ -178,10 +175,10 @@ const Roadmap: React.FC = () => {
 													</td>
 													<td
 														className={`border border-gray-700 p-2 ${problem.difficulty === "Easy"
-																? "text-green-400"
-																: problem.difficulty === "Medium"
-																	? "text-yellow-400"
-																	: "text-red-400"
+															? "text-green-400"
+															: problem.difficulty === "Medium"
+																? "text-yellow-400"
+																: "text-red-400"
 															}`}
 													>
 														{problem.difficulty}
